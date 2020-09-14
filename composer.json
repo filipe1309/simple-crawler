@@ -1,0 +1,12 @@
+{
+    "name": "devontherun/course-finder",
+    "description": "Search courses on Alura site",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Filipe Leuch Bonfim",
+            "email": "filipe1309@gmail.com"
+        }
+    ],
+    "require": {}
+}
