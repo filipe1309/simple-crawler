@@ -18,7 +18,7 @@ class Buscador
 
     public function buscar(string $url): array
     {
-        $resposta = $this->httpClient->request('GET', 'https://www.alura.com.br/cursos-online-programacao/php');
+        $resposta = $this->httpClient->request('GET', $url);
 
         $html = $resposta->getBody();
         $this->crawler->addHtmlContent($html);
