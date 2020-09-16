@@ -18,4 +18,8 @@ $ composer require symfony/css-selector
 $ php buscar-cursos.php
 
 $ composer dump-autoload # atualiza autoload
+
+composer require --dev phpunit/phpunit
+
+composer install --no-dev # para prod, baixa somente as dependencias do require
 ```
