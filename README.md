@@ -22,4 +22,8 @@ $ composer dump-autoload # atualiza autoload
 composer require --dev phpunit/phpunit
 
 composer install --no-dev # para prod, baixa somente as dependencias do require
+
+$ ./vendor/bin/phpunit --version
+
+$ ./vendor/bin/phpunit tests/TestBuscadorDeCursos.php
 ```
