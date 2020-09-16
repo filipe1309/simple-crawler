@@ -37,3 +37,16 @@ $ vendor/bin/phpcs --version
 
 $ vendor/bin/phpcs --standard=PSR12 src/
 ```
+
+https://github.com/phan/phan
+
+```
+$ composer require --dev phan/phan
+
+$ vendor/bin/phan --version
+
+$ vendor/bin/phan --allow-polyfill-parser src/Buscador.php
+
+# depois de setar o .phan/config.php
+$ vendor/bin/phan --allow-polyfill-parser 
+```
