@@ -27,3 +27,13 @@ $ ./vendor/bin/phpunit --version
 
 $ ./vendor/bin/phpunit tests/TestBuscadorDeCursos.php
 ```
+
+https://github.com/squizlabs/PHP_CodeSniffer
+
+```
+$ composer require --dev squizlabs/php_codesniffer
+
+$ vendor/bin/phpcs --version
+
+$ vendor/bin/phpcs --standard=PSR12 src/
+```
