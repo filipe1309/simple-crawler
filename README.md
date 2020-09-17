@@ -1,22 +1,23 @@
-# PHP Composer
+# Simple PHP Crawler
+> Project based on Alura PHP Composer course
 
-## Iniciar composer
+## Start composer
 ```
 $ composer init
 ```
 
-## Instalar libs
+## Intall libs
 ```
 
-$ composer require guzzlehttp/guzzle # busca em  https://packagist.org/
+$ composer require guzzlehttp/guzzle # search in https://packagist.org/
 ```
 
-symfony/dom-crawler # em require do composer.json
+symfony/dom-crawler # in require section of composer.json
 
 ```
-$ composer install # instala o que esta no composer.lock se existir, cc instala o que esta no update
+$ composer install # if composer.lock exists, install what is in composer.lock, otherwise install what is in composer.json
 
-$ composer update # instala o que esta no composer.json e atualiza
+$ composer update # install and update what is in composer.json
 
 $ composer require symfony/css-selector
 
@@ -24,24 +25,24 @@ $ php buscar-cursos.php
 
 ```
 
-## Atualizar autoload
+## Update Composer autoload
 ```
 
 $ composer dump-autoload # atualiza autoload
 ```
 
-## Testes unitários (PHPUnit)
+## Unit tests (PHPUnit)
 ```
 composer require --dev phpunit/phpunit
 
-composer install --no-dev # para prod, baixa somente as dependencias do require
+composer install --no-dev # to prod, download only require dependencies
 
 $ ./vendor/bin/phpunit --version
 
 $ ./vendor/bin/phpunit tests/TestBuscadorDeCursos.php
 ```
 
-## Verificador dos padrões de código (PSR12) (PHP Code Sniffer)
+## Verify code standards (PSR12) (PHP Code Sniffer)
 https://github.com/squizlabs/PHP_CodeSniffer
 
 ```
@@ -52,7 +53,7 @@ $ vendor/bin/phpcs --version
 $ vendor/bin/phpcs --standard=PSR12 src/
 ```
 
-## Analizador statico de sintaxe Phan
+## Syntax statical code analyzer (Phan)
 https://github.com/phan/phan
 
 ```
@@ -67,7 +68,7 @@ $ vendor/bin/phan --allow-polyfill-parser
 
 ```
 
-## Scripts personalizados (add manualmente)
+## Custom Composer scripts (add manually in composer.json)
 ```
 composer test
 
@@ -75,9 +76,20 @@ composer cs
 
 composer phan
 
-# Referencia os 3 ultimos scritps em 1 só
+# References the last 3 scripts in 1 script
 composer check
 
-# Exibe todos scripts disponiveis
+# Lista all scripts available
 composer list
+```
+
+
+## Composer Versioning (Semantic Versioning)
+
+https://getcomposer.org/doc/articles/versions.md#exact-version-constraint
+
+https://semver.org/
+
+```
+git tag -a v1.0.0
 ```
