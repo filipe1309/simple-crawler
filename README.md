@@ -6,7 +6,7 @@
 $ composer init
 ```
 
-## Intall libs
+## Install libs
 ```
 
 $ composer require guzzlehttp/guzzle # search in https://packagist.org/
@@ -27,7 +27,6 @@ $ php buscar-cursos.php
 
 ## Update Composer autoload
 ```
-
 $ composer dump-autoload # atualiza autoload
 ```
 
@@ -92,4 +91,6 @@ https://semver.org/
 
 ```
 git tag -a v1.0.0
+
+git push origin --tags
 ```
