@@ -1,6 +1,8 @@
 # Simple PHP Crawler
 > Project based on Alura PHP Composer course
 
+https://packagist.org/packages/devontherun/simple-php-crawler
+
 ## Start composer
 ```
 $ composer init
