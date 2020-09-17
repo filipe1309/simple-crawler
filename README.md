@@ -1,7 +1,12 @@
-# Curso composer
+# PHP composer
 
+## Iniciar composer
 ```
 $ composer init
+```
+
+## Instalar libs
+```
 
 $ composer require guzzlehttp/guzzle # busca em  https://packagist.org/
 ```
@@ -17,8 +22,16 @@ $ composer require symfony/css-selector
 
 $ php buscar-cursos.php
 
-$ composer dump-autoload # atualiza autoload
+```
 
+## Atualizar autoload
+```
+
+$ composer dump-autoload # atualiza autoload
+```
+
+## Testes unitários (PHPUnit)
+```
 composer require --dev phpunit/phpunit
 
 composer install --no-dev # para prod, baixa somente as dependencias do require
@@ -28,6 +41,7 @@ $ ./vendor/bin/phpunit --version
 $ ./vendor/bin/phpunit tests/TestBuscadorDeCursos.php
 ```
 
+## Verificador dos padrões de código (PSR12) (PHP Code Sniffer)
 https://github.com/squizlabs/PHP_CodeSniffer
 
 ```
@@ -38,6 +52,7 @@ $ vendor/bin/phpcs --version
 $ vendor/bin/phpcs --standard=PSR12 src/
 ```
 
+## Analizador statico de sintaxe Phan
 https://github.com/phan/phan
 
 ```
@@ -49,4 +64,14 @@ $ vendor/bin/phan --allow-polyfill-parser src/Buscador.php
 
 # depois de setar o .phan/config.php
 $ vendor/bin/phan --allow-polyfill-parser 
+
+```
+
+## Scrips personalizados (add manualmente)
+```
+composer test
+
+composer cs
+
+composer pahn
 ```
