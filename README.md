@@ -77,4 +77,7 @@ composer phan
 
 # Referencia os 3 ultimos scritps em 1 só
 composer check
+
+# Exibe todos scripts disponiveis
+composer list
 ```

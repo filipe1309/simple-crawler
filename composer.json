@@ -39,5 +39,8 @@
             "@cs",
             "@test"
         ]
+    },
+    "scripts-descriptions": {
+        "check": "Roda as verificacoes do codigo: phan, phpcs e phpunit"
     }
 }
