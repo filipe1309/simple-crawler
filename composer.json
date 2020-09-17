@@ -1,5 +1,5 @@
 {
-    "name": "devontherun/course-finder",
+    "name": "devontherun/simple-php-crawler",
     "description": "Search courses on Alura site",
     "type": "library",
     "authors": [
