@@ -1,4 +1,4 @@
-# PHP composer
+# PHP Composer
 
 ## Iniciar composer
 ```
@@ -67,11 +67,14 @@ $ vendor/bin/phan --allow-polyfill-parser
 
 ```
 
-## Scrips personalizados (add manualmente)
+## Scripts personalizados (add manualmente)
 ```
 composer test
 
 composer cs
 
-composer pahn
+composer phan
+
+# Referencia os 3 ultimos scritps em 1 só
+composer check
 ```
