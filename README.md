@@ -94,3 +94,8 @@ git tag -a v1.0.0
 
 git push origin --tags
 ```
+
+## Add a composer bin file (Cli interface)
+```
+$ vendor/bin/buscar-cursos
+```
